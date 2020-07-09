@@ -120,6 +120,7 @@ class ComposerStaticInitb5d2dc428cff087052bce3b9a631746d
             'League\\Flysystem\\' => 17,
             'League\\CommonMark\\' => 18,
             'Laravel\\Tinker\\' => 15,
+            'Laravel\\Sanctum\\' => 16,
         ),
         'I' => 
         array (
@@ -367,6 +368,10 @@ class ComposerStaticInitb5d2dc428cff087052bce3b9a631746d
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
         ),
+        'Laravel\\Sanctum\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/sanctum/src',
+        ),
         'Illuminate\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
@@ -475,8 +480,12 @@ class ComposerStaticInitb5d2dc428cff087052bce3b9a631746d
     );
 
     public static $classMap = array (
+        'App\\Category' => __DIR__ . '/../..' . '/app/Category.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\API\\v1\\CategoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/v1/CategoryController.php',
+        'App\\Http\\Controllers\\API\\v1\\ImageController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/v1/ImageController.php',
+        'App\\Http\\Controllers\\API\\v1\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/v1/UserController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -487,6 +496,20 @@ class ComposerStaticInitb5d2dc428cff087052bce3b9a631746d
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Requests\\CategoryStoreRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CategoryStoreRequest.php',
+        'App\\Http\\Requests\\ImageStoreRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ImageStoreRequest.php',
+        'App\\Http\\Requests\\UserStoreRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UserStoreRequest.php',
+        'App\\Http\\Requests\\UserUpdateRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UserUpdateRequest.php',
+        'App\\Http\\Resources\\CategoryCollection' => __DIR__ . '/../..' . '/app/Http/Resources/CategoryCollection.php',
+        'App\\Http\\Resources\\CategoryResource' => __DIR__ . '/../..' . '/app/Http/Resources/CategoryResource.php',
+        'App\\Http\\Resources\\ImageCollection' => __DIR__ . '/../..' . '/app/Http/Resources/ImageCollection.php',
+        'App\\Http\\Resources\\ImageResource' => __DIR__ . '/../..' . '/app/Http/Resources/ImageResource.php',
+        'App\\Http\\Resources\\UserCollection' => __DIR__ . '/../..' . '/app/Http/Resources/UserCollection.php',
+        'App\\Http\\Resources\\UserResource' => __DIR__ . '/../..' . '/app/Http/Resources/UserResource.php',
+        'App\\Image' => __DIR__ . '/../..' . '/app/Image.php',
+        'App\\Policies\\CategoryPolicy' => __DIR__ . '/../..' . '/app/Policies/CategoryPolicy.php',
+        'App\\Policies\\ImagePolicy' => __DIR__ . '/../..' . '/app/Policies/ImagePolicy.php',
+        'App\\Policies\\UserPolicy' => __DIR__ . '/../..' . '/app/Policies/UserPolicy.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -2354,6 +2377,16 @@ class ComposerStaticInitb5d2dc428cff087052bce3b9a631746d
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
         'ImageSeeder' => __DIR__ . '/../..' . '/database/seeds/ImageSeeder.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Laravel\\Sanctum\\Contracts\\HasAbilities' => __DIR__ . '/..' . '/laravel/sanctum/src/Contracts/HasAbilities.php',
+        'Laravel\\Sanctum\\Guard' => __DIR__ . '/..' . '/laravel/sanctum/src/Guard.php',
+        'Laravel\\Sanctum\\HasApiTokens' => __DIR__ . '/..' . '/laravel/sanctum/src/HasApiTokens.php',
+        'Laravel\\Sanctum\\Http\\Controllers\\CsrfCookieController' => __DIR__ . '/..' . '/laravel/sanctum/src/Http/Controllers/CsrfCookieController.php',
+        'Laravel\\Sanctum\\Http\\Middleware\\EnsureFrontendRequestsAreStateful' => __DIR__ . '/..' . '/laravel/sanctum/src/Http/Middleware/EnsureFrontendRequestsAreStateful.php',
+        'Laravel\\Sanctum\\NewAccessToken' => __DIR__ . '/..' . '/laravel/sanctum/src/NewAccessToken.php',
+        'Laravel\\Sanctum\\PersonalAccessToken' => __DIR__ . '/..' . '/laravel/sanctum/src/PersonalAccessToken.php',
+        'Laravel\\Sanctum\\Sanctum' => __DIR__ . '/..' . '/laravel/sanctum/src/Sanctum.php',
+        'Laravel\\Sanctum\\SanctumServiceProvider' => __DIR__ . '/..' . '/laravel/sanctum/src/SanctumServiceProvider.php',
+        'Laravel\\Sanctum\\TransientToken' => __DIR__ . '/..' . '/laravel/sanctum/src/TransientToken.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
