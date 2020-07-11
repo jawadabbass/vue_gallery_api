@@ -1,6 +1,5 @@
 <?php
-
-
+//local comment
 namespace App\Policies;
 
 use App\User;
