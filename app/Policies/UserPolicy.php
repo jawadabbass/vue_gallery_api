@@ -2,7 +2,7 @@
 
 
 namespace App\Policies;
-
+// server comment
 use App\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
